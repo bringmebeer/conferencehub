@@ -1,0 +1,28 @@
+<h1>Listing conferences</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Sponsor</th>
+    <th>Venue</th>
+    <th>Image url</th>
+  </tr>
+
+<% for conference in @conferences %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%=h conference.name %></td>
+    <td><%=h conference.description %></td>
+    <td><%=h conference.sponsor_name %></td>
+    <td><%=h conference.venue %></td>
+    <td><%=h conference.image_url %></td>
+    <td><%= link_to 'Show', conference %></td>
+    <td><%= link_to 'Edit', edit_conference_path(conference) %></td>
+    <td><%= link_to 'Destroy', conference, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New conference', new_conference_path %>
