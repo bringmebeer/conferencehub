@@ -1,6 +1,6 @@
-<h1>Listing conferences</h1>
+<h1>Conferences</h1>
 
-<table>
+<table class="list">
   <tr>
     <th>Name</th>
     <th>Description</th>
@@ -10,7 +10,7 @@
   </tr>
 
 <% for conference in @conferences %>
-  <tr>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
     <td><%=h conference.name %></td>
     <td><%=h conference.description %></td>
     <td><%=h conference.sponsor_name %></td>

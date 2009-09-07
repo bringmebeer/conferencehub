@@ -2436,3 +2436,1298 @@ c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
 Rendering template within layouts/conferences
 Rendering conferences/index
 Completed in 0.01932 (51 reqs/sec) | Rendering: 0.00636 (32%) | DB: 0.00128 (6%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:22:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000950)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.02674 (37 reqs/sec) | Rendering: 0.00802 (30%) | DB: 0.00095 (3%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#show (for 127.0.0.1 at 2009-09-07 21:22:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000323)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 1) [0m
+Rendering template within layouts/conferences
+Rendering conferences/show
+Completed in 0.01153 (86 reqs/sec) | Rendering: 0.00336 (29%) | DB: 0.00032 (2%) | 200 OK [http://localhost/conferences/1]
+
+
+Processing ConferencesController#images (for 127.0.0.1 at 2009-09-07 21:22:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"conferences"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#edit (for 127.0.0.1 at 2009-09-07 21:22:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000300)[0m   [0;1mSELECT * FROM "conferences" WHERE ("conferences"."id" = 1) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.01309 (76 reqs/sec) | Rendering: 0.00572 (43%) | DB: 0.00030 (2%) | 200 OK [http://localhost/conferences/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 21:22:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/conferences/1/images/header_logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#update (for 127.0.0.1 at 2009-09-07 21:22:57) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "_method"=>"put", "action"=>"update", "id"=>"1", "conference"=>{"name"=>"Mobile World Congress", "image_url"=>"", "sponsor_name"=>"Nokia", "description"=>"A long text descriptions of the Mobile World Congress conference.", "venue"=>"Earl's Court, London"}, "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000285)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 1) [0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mSELECT "name" FROM "conferences" WHERE ("conferences".name = 'Mobile World Congress' AND "conferences".id <> 1) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.01619 (61 reqs/sec) | Rendering: 0.00296 (18%) | DB: 0.00046 (2%) | 200 OK [http://localhost/conferences/1]
+
+
+Processing ConferencesController#images (for 127.0.0.1 at 2009-09-07 21:22:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"conferences"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:23:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000823)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.04309 (23 reqs/sec) | Rendering: 0.00483 (11%) | DB: 0.00082 (1%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:26:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000820)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01447 (69 reqs/sec) | Rendering: 0.00496 (34%) | DB: 0.00082 (5%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#edit (for 127.0.0.1 at 2009-09-07 21:26:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000316)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.01196 (83 reqs/sec) | Rendering: 0.00459 (38%) | DB: 0.00032 (2%) | 200 OK [http://localhost/conferences/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 21:26:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/conferences/3/images/header_logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#update (for 127.0.0.1 at 2009-09-07 21:26:43) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "_method"=>"put", "action"=>"update", "id"=>"3", "conference"=>{"name"=>"ASH", "image_url"=>"", "sponsor_name"=>"Shell Oil", "description"=>"description test", "venue"=>"Earl's Court, London"}, "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000379)[0m   [0;1mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+  [4;35;1mSQL (0.000132)[0m   [0mSELECT "name" FROM "conferences" WHERE ("conferences".name = 'ASH' AND "conferences".id <> 3) [0m
+
+
+NoMethodError (undefined method `length' for :image_url:Symbol):
+    /app/models/conference.rb:16:in `image_url_is_valid'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:161:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `each'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:929:in `valid_without_callbacks?'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:267:in `valid?'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:900:in `save_without_dirty'
+    /vendor/rails/activerecord/lib/active_record/dirty.rb:75:in `save_without_transactions'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:118:in `rollback_active_record_state!'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2262:in `update_attributes'
+    /app/controllers/conferences_controller.rb:63:in `update'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/conferences_controller.rb:62:in `update'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ConferencesController#edit (for 127.0.0.1 at 2009-09-07 21:26:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000283)[0m   [0;1mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.02847 (35 reqs/sec) | Rendering: 0.01280 (44%) | DB: 0.00028 (0%) | 200 OK [http://localhost/conferences/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 21:26:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/conferences/3/images/header_logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#update (for 127.0.0.1 at 2009-09-07 21:27:01) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "_method"=>"put", "action"=>"update", "id"=>"3", "conference"=>{"name"=>"ASH", "image_url"=>"", "sponsor_name"=>"Shell Oil", "description"=>"description test", "venue"=>"Earl's Court, London"}, "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000285)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mSELECT "name" FROM "conferences" WHERE ("conferences".name = 'ASH' AND "conferences".id <> 3) [0m
+Redirected to http://localhost:3000/conferences/3
+Completed in 0.01379 (72 reqs/sec) | DB: 0.00041 (2%) | 302 Found [http://localhost/conferences/3]
+
+
+Processing ConferencesController#show (for 127.0.0.1 at 2009-09-07 21:27:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIilDb25mZXJlbmNlIHdhcyBzdWNjZXNzZnVsbHkgdXBk
+YXRlZC4GOgpAdXNlZHsGOwdG--4e14c48847430f39e6d5cac3e343023ee5da16c3
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000289)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+Rendering template within layouts/conferences
+Rendering conferences/show
+Completed in 0.01721 (58 reqs/sec) | Rendering: 0.00824 (47%) | DB: 0.00029 (1%) | 200 OK [http://localhost/conferences/3]
+
+
+Processing ConferencesController#images (for 127.0.0.1 at 2009-09-07 21:27:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIilDb25mZXJlbmNlIHdhcyBzdWNjZXNzZnVsbHkgdXBk
+YXRlZC4GOgpAdXNlZHsGOwdU--4e29e38e5c6bae06fa5d482527094cbb7e6aee1d
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"conferences"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#edit (for 127.0.0.1 at 2009-09-07 21:27:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000318)[0m   [0;1mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.01704 (58 reqs/sec) | Rendering: 0.00804 (47%) | DB: 0.00032 (1%) | 200 OK [http://localhost/conferences/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 21:27:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/conferences/3/images/header_logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#update (for 127.0.0.1 at 2009-09-07 21:27:07) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "_method"=>"put", "action"=>"update", "id"=>"3", "conference"=>{"name"=>"ASH", "image_url"=>"qq", "sponsor_name"=>"Shell Oil", "description"=>"description test", "venue"=>"Earl's Court, London"}, "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000435)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mSELECT "name" FROM "conferences" WHERE ("conferences".name = 'ASH' AND "conferences".id <> 3) [0m
+
+
+NoMethodError (undefined method `validates_format_of' for #<Conference:0xb60ee6b8>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    /app/models/conference.rb:17:in `image_url_is_valid'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:161:in `call'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `each'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `send'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:90:in `run'
+    /vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:929:in `valid_without_callbacks?'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:267:in `valid?'
+    /vendor/rails/activerecord/lib/active_record/validations.rb:900:in `save_without_dirty'
+    /vendor/rails/activerecord/lib/active_record/dirty.rb:75:in `save_without_transactions'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:118:in `rollback_active_record_state!'
+    /vendor/rails/activerecord/lib/active_record/transactions.rb:106:in `save'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2262:in `update_attributes'
+    /app/controllers/conferences_controller.rb:63:in `update'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+    /vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/conferences_controller.rb:62:in `update'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ConferencesController#edit (for 127.0.0.1 at 2009-09-07 21:27:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000283)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.03580 (27 reqs/sec) | Rendering: 0.02885 (80%) | DB: 0.00028 (0%) | 200 OK [http://localhost/conferences/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 21:27:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/conferences/3/images/header_logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#update (for 127.0.0.1 at 2009-09-07 21:27:57) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "_method"=>"put", "action"=>"update", "id"=>"3", "conference"=>{"name"=>"ASH", "image_url"=>"qq", "sponsor_name"=>"Shell Oil", "description"=>"description test", "venue"=>"Earl's Court, London"}, "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000363)[0m   [0;1mSELECT * FROM "conferences" WHERE ("conferences"."id" = 3) [0m
+  [4;35;1mSQL (0.000130)[0m   [0mSELECT "name" FROM "conferences" WHERE ("conferences".name = 'ASH' AND "conferences".id <> 3) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.01578 (63 reqs/sec) | Rendering: 0.00312 (19%) | DB: 0.00049 (3%) | 200 OK [http://localhost/conferences/3]
+
+
+Processing ConferencesController#images (for 127.0.0.1 at 2009-09-07 21:27:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"conferences"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:28:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000856)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.03378 (29 reqs/sec) | Rendering: 0.00680 (20%) | DB: 0.00086 (2%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:29:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000796)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01266 (78 reqs/sec) | Rendering: 0.00585 (46%) | DB: 0.00080 (6%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:30:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000813)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01619 (61 reqs/sec) | Rendering: 0.00605 (37%) | DB: 0.00081 (5%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:32:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000789)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01333 (75 reqs/sec) | Rendering: 0.00485 (36%) | DB: 0.00079 (5%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:32:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000799)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.03139 (31 reqs/sec) | Rendering: 0.00464 (14%) | DB: 0.00080 (2%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:33:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000826)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01434 (69 reqs/sec) | Rendering: 0.00625 (43%) | DB: 0.00083 (5%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:33:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000829)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01193 (83 reqs/sec) | Rendering: 0.00537 (45%) | DB: 0.00083 (6%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:38:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.002769)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00453 (30%) | DB: 0.00277 (18%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:39:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000784)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01103 (90 reqs/sec) | Rendering: 0.00464 (42%) | DB: 0.00078 (7%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:40:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000797)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01683 (59 reqs/sec) | Rendering: 0.00722 (42%) | DB: 0.00080 (4%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:43:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000846)[0m   [0;1mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.01597 (62 reqs/sec) | Rendering: 0.00574 (35%) | DB: 0.00085 (5%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#index (for 127.0.0.1 at 2009-09-07 21:46:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000830)[0m   [0mSELECT * FROM "conferences" [0m
+Rendering template within layouts/conferences
+Rendering conferences/index
+Completed in 0.02891 (34 reqs/sec) | Rendering: 0.01310 (45%) | DB: 0.00083 (2%) | 200 OK [http://localhost/conferences]
+
+
+Processing ConferencesController#show (for 127.0.0.1 at 2009-09-07 21:47:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"conferences"}
+  [4;36;1mConference Load (0.000302)[0m   [0;1mSELECT * FROM "conferences" WHERE ("conferences"."id" = 1) [0m
+Rendering template within layouts/conferences
+Rendering conferences/show
+Completed in 0.03346 (29 reqs/sec) | Rendering: 0.00232 (6%) | DB: 0.00030 (0%) | 200 OK [http://localhost/conferences/1]
+
+
+Processing ConferencesController#images (for 127.0.0.1 at 2009-09-07 21:47:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"conferences"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ConferencesController#edit (for 127.0.0.1 at 2009-09-07 21:47:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"conferences"}
+  [4;35;1mConference Load (0.000302)[0m   [0mSELECT * FROM "conferences" WHERE ("conferences"."id" = 1) [0m
+Rendering template within layouts/conferences
+Rendering conferences/edit
+Completed in 0.04127 (24 reqs/sec) | Rendering: 0.01280 (31%) | DB: 0.00030 (0%) | 200 OK [http://localhost/conferences/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 21:47:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/conferences/1/images/header_logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.000619)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateConferences (20090906205603)
+  [4;35;1mSQL (0.000159)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddSponsorNameToConference (20090906210353)
+  [4;36;1mSQL (0.000163)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090907205525)
+  [4;35;1mSQL (0.000161)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.004293)[0m   [0mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255) DEFAULT NULL NULL, "firstname" varchar(255) DEFAULT NULL NULL, "lastname" varchar(255) DEFAULT NULL NULL, "email" varchar(255) DEFAULT NULL NULL, "username" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.006258)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090907205525')[0m
+  [4;35;1mSQL (0.000305)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000063)[0m   [0mPRAGMA index_list("conferences")[0m
+  [4;36;1mSQL (0.000056)[0m   [0;1mPRAGMA index_list("people")[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-09-07 21:56:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"people"}
+  [4;36;1mPerson Load (0.000537)[0m   [0;1mSELECT * FROM "people" [0m
+Rendering template within layouts/people
+Rendering people/index
+Completed in 0.19898 (5 reqs/sec) | Rendering: 0.00274 (1%) | DB: 0.00054 (0%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-09-07 21:56:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"new", "controller"=>"people"}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 0.01735 (57 reqs/sec) | Rendering: 0.00676 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/people/new]
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-09-07 21:57:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"new", "controller"=>"people"}
+Rendering template within layouts/application
+Rendering people/new
+Completed in 0.01439 (69 reqs/sec) | Rendering: 0.00715 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/people/new]
+
+
+Processing PeopleController#images (for 127.0.0.1 at 2009-09-07 21:57:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"people"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-09-07 21:57:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"people"}
+  [4;35;1mPerson Load (0.000448)[0m   [0mSELECT * FROM "people" [0m
+Rendering template within layouts/application
+Rendering people/index
+Completed in 0.02671 (37 reqs/sec) | Rendering: 0.02121 (79%) | DB: 0.00045 (1%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-09-07 21:59:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"index", "controller"=>"people"}
+  [4;36;1mPerson Load (0.000464)[0m   [0;1mSELECT * FROM "people" [0m
+Rendering template within layouts/application
+Rendering people/index
+Completed in 0.00929 (107 reqs/sec) | Rendering: 0.00237 (25%) | DB: 0.00046 (4%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-09-07 21:59:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"new", "controller"=>"people"}
+Rendering template within layouts/application
+Rendering people/new
+Completed in 0.01435 (69 reqs/sec) | Rendering: 0.00391 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/people/new]
+
+
+Processing PeopleController#images (for 127.0.0.1 at 2009-09-07 21:59:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"people"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-09-07 21:59:55) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Create", "person"=>{"title"=>"Mr", "username"=>"jonbeer", "lastname"=>"Beer", "firstname"=>"Jon", "email"=>"jonpaulbeer@gmail.com"}, "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "action"=>"index", "controller"=>"people"}
+  [4;35;1mPerson Load (0.000487)[0m   [0mSELECT * FROM "people" [0m
+Rendering template within layouts/application
+Rendering people/index
+Completed in 0.04019 (24 reqs/sec) | Rendering: 0.00092 (2%) | DB: 0.00049 (1%) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-09-07 22:00:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"action"=>"new", "controller"=>"people"}
+Rendering template within layouts/application
+Rendering people/new
+Completed in 0.01115 (89 reqs/sec) | Rendering: 0.00429 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/people/new]
+
+
+Processing PeopleController#images (for 127.0.0.1 at 2009-09-07 22:00:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"format"=>"png", "action"=>"images", "id"=>"header_logo", "controller"=>"people"}
+
+
+ActionController::UnknownAction (No action responded to images):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+Rendering /home/jonbeer/workspace/conferencehub/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2009-09-07 22:01:51) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjcwZWFmNWVkN2Y4NzdhMTY0Mzk2MWE1Y2MwNjNj
+OGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--ad05e2813d6ee0292dd92770c5e52016630708e3
+  Parameters: {"commit"=>"Create", "person"=>{"title"=>"aaa", "username"=>"aaa", "lastname"=>"aaa", "firstname"=>"aaa", "email"=>"aaa"}, "authenticity_token"=>"5749e75deb36ac36108f17cfa04651eb78c5a178", "action"=>"index", "controller"=>"people"}
+  [4;36;1mPerson Load (0.000459)[0m   [0;1mSELECT * FROM "people" [0m
+Rendering template within layouts/application
+Rendering people/index
+Completed in 0.01445 (69 reqs/sec) | Rendering: 0.00088 (6%) | DB: 0.00046 (3%) | 200 OK [http://localhost/people]

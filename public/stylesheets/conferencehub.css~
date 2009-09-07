@@ -1,8 +1,27 @@
 
+h1, h2, h3, h4 {
+   color:#2793ed;
+}
+
+table.list th {
+   padding:6px;
+   text-align:left;
+   background-color:#60b0f2;
+   color:#FFFFFF;
+}
+
+table.list td {
+   padding:4px;
+}
+
 tr.list-line-odd {
-   background-color:#cccccc;
+   background-color:#dddddd;
 }
 
 tr.list-line-even {
    background-color:#eeeeee;
+}
+
+#content {
+   margin:10px;
 }
